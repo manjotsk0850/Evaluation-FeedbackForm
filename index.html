@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link url="stylesheet" href="style.css">
+    
+
+    
+</head>
+<body>
+    <div id="heading">
+        <h1 id="output">Hello World</h1>
+    </div>
+
+    <script type="text/babel">
+
+        const getMessage = () => "Feedback Form";
+        document.getElementById('output').innerHTML = getMessage();
+
+
+        function App(){
+
+            const [x, setx]=useState(0);
+            return(
+                <>
+                    <div>
+                        <h1>Feedback Form</h1>
+
+                        <input placeholder="Enter your name" type="text"/>
+                        <button onClick={() => setx((x) => x + 1)}/>
+                    </div>
+
+                    <div>
+                    
+                    </div>
+                </>
+            );
+        }
+
+    </script>
+  
+</body>
+</html>
